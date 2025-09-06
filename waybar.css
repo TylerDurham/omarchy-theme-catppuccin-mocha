@@ -1,40 +1,46 @@
 @define-color hot #fab387;        /* Peach */
 @define-color warm #F5E0DC;       /* Rosewater */
 @define-color normal #74c7ec;     /* Sapphire */
-@define-color dimmed #6c7086;     /* Overlay0 */
-@define-color background #181825; /* Mantle */
+@define-color text #9399b2;     /* Overlay2 */
 @define-color active #a6e3a1;     /* Green */
-
-* {
-  color: @dimmed;
-  background-color: @background;
-}
 
 #workspaces button.active label {
   color: @active;
 }
 
-#clock {
-  
-  color: @dimmed;
-}
-
 /* I think this looks better just a wee bit larger. */
 #bluetooth {
   font-size: 11pt;
+  margin-right: 7px;
 }
 
 /* Other modules. */
-#battery, #bluetooth, #custom-power-menu, #cpu, #network, #power-profiles-daemon.balanced, #pulseaudio {
+#clock,
+#network,
+#pulseaudio,
+#cpu,
+#group-tray-expander,
+#custom-expand-icon,
+#power-profiles-daemon.balanced,
+#battery,
+#custom-omarchy,
+#hyprland-window,
+#bluetooth,
+#window,
+#battery.normal {
+  color: @text;
+}
+
+#custom-omarchy {
   color: @normal;
 }
 
-/* Performance Power Profile */
-#power-profiles-daemon.performance {
+/* HOT colored icon states */
+#power-profiles-daemon.performance, #battery.critical {
   color: @hot;
 }
 
-/* Power Saver Power Profile */
-#power-profiles-daemon.power-saver {
+/* ACTIVE color icon states */
+#power-profiles-daemon.power-saver, #battery.charging {
   color: @active;
 }
