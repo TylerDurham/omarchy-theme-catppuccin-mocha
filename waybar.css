@@ -3,6 +3,8 @@
 @define-color normal #74c7ec;     /* Sapphire */
 @define-color text #9399b2;     /* Overlay2 */
 @define-color active #a6e3a1;     /* Green */
+@define-color background #181825;  /* Mantle */
+@define-color foreground #9399b2;
 
 #workspaces button.active label {
   color: @active;
