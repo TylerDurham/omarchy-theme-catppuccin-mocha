@@ -33,7 +33,7 @@
   color: @text;
 }
 
-#custom-omarchy {
+#custom-omarchy, #custom-tailscale.connected {
   color: @normal;
 }
 
@@ -43,7 +43,8 @@
 }
 
 /* ACTIVE color icon states */
-#power-profiles-daemon.power-saver, #battery.charging, #custom-tailscale.connected {
+#power-profiles-daemon.power-saver, #battery.charging {
   color: @active;
 }
+
 
