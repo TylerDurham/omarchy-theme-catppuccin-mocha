@@ -43,6 +43,7 @@
 }
 
 /* ACTIVE color icon states */
-#power-profiles-daemon.power-saver, #battery.charging {
+#power-profiles-daemon.power-saver, #battery.charging, #custom-tailscale.connected {
   color: @active;
 }
+
